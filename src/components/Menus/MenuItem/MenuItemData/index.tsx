@@ -1,4 +1,4 @@
-import { Home, Info, School, ContactMail } from '@mui/icons-material';
+import { Home, Info, School, ContactMail, DateRange } from '@mui/icons-material';
 
 export const menu = [
     {
@@ -13,6 +13,10 @@ export const menu = [
         label:"Cursos", 
         link:"/courses",
         icon: <School />
+    },{
+        label:"Cursos Agendados", 
+        link:"/courses-scheduled",
+        icon: <DateRange />
     },{
         label:"Contatos", 
         link:"/contact",

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CoursesGrid from '../components/CoursesGrid';
+import CoursesScheduledGrid from '../components/CoursesScheduledGrid';
 import SideBar from '../components/Menus/SideBar';
 
 const Container = styled.div`
@@ -10,11 +10,11 @@ const Container = styled.div`
     flex-direction: row;
 `
 
-const Courses:React.FC = () => (
+const CoursesScheduled:React.FC = () => (
     <Container>        
         <SideBar />
-        <CoursesGrid welcome="Cursos" route="courses" />                
+        <CoursesScheduledGrid welcome="Cursos Agendados" route="courses-scheduled" />                
     </Container>
 )
 
-export default Courses;
+export default CoursesScheduled;

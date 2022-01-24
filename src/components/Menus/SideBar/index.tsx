@@ -12,14 +12,14 @@ const SideBarContainer = styled.section`
     transition-property: width;
     transition-duration: 0.5s;    
     transition-timing-function: cubic-bezier(0.5, 0.5, 0.5,);
-    a { color: #f5f6fa; text-decoration: none; display: flex; align-items: center; 
+    a { width: 230px; color: #f5f6fa; text-decoration: none; display: flex; align-items: center; 
         padding-left: 13px;
         svg {
             margin-right: 30px;
         }
     }
-    ul > li span.label { width: 100px; }
-    a:hover { color: #f5f6fa; text-decoration: none; }
+    ul > li span.label { width: 230px; }
+    a:hover { text-decoration: underline; }
     &:hover{
         width: 350px;
         ul > li span.label { display: block; }
