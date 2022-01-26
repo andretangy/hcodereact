@@ -6,7 +6,10 @@ import Contact from './screens/Contact';
 import Courses from './screens/Courses';
 import CoursesScheduled from './screens/CoursesScheduled';
 import Home from './screens/Home';
+import Login from './screens/Login';
 import NotFound from './screens/NotFound';
+import Users from './screens/Users';
+import UsersNew from './screens/UsersNew';
 import createGlobalStyle from './styles/global';
 
 const GlobalStyle = createGlobalStyle;
@@ -15,11 +18,14 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/courses-scheduled" element={<CoursesScheduled />}/>
-      <Route path="/courses" element={<Courses />}/>
+      <Route path="about" element={<About />} />
+      <Route path="courses-scheduled" element={<CoursesScheduled />}/>
+      <Route path="users" element={<Users />}/>
+      <Route path="users/new" element={<UsersNew />}/>
+      <Route path="courses" element={<Courses />}/>
       <Route path="*" element={<NotFound />} />  
-      <Route path="/contact" element={<Contact />}/>              
+      <Route path="contact" element={<Contact />}/>     
+      <Route path="login" element={<Login />}/>           
     </Routes>
     <React.StrictMode>
       <GlobalStyle /> 

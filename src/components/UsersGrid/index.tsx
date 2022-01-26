@@ -1,4 +1,4 @@
-import { Breadcrumbs, Link, Typography } from '@mui/material';
+import { Breadcrumbs, Button, Link, Typography } from '@mui/material';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
@@ -75,6 +75,11 @@ const Block = styled.div`
     margin: 0 auto;
 `
 
+const NewUser = styled.div`
+    position: absolute;
+    right: 5%;
+`
+
 interface CoursesScheduledProps {
     welcome: string;
     route: string;
@@ -117,10 +122,16 @@ export default function CoursesScheduledGrid({welcome,route}:CoursesScheduledPro
                     color="inherit"
                     href="/courses"
                 >
-                    Cursos Agendados
+                    Usuários
                 </Link>
-                <Typography color="text.primary">Cursos Agendados</Typography>
+                <Typography color="text.primary">Lista de Usuários</Typography>
             </Breadcrumbs>
+            <NewUser>
+              <Button href="users/new" variant="contained">
+                Novo Usuário
+              </Button>
+            </NewUser>
+
         </Header>
         <Block>       
             <DataGrid
